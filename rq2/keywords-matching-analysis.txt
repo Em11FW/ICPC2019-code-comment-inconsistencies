@@ -1,0 +1,10 @@
+We extracted, from the set of 1,500 systems used in RQ1, all commits having a commit note matching lexical patterns likely indicating the fixing of code-comment inconsistencies. To define these lexical patterns, the first author experimented with different combinations of words and inspected the resulting commits. In particular, he tested the following lexical patterns:
+
+--(update* or outdate*) and comment(s): 3,641 commits were matched
+--(inconsisten*): 52975
+--(inconsisten*) and comment(s): 42
+--(inconsisten*) and doc*: 166
+--(add*) and comment(s): 16,123
+--(remove*) and comment(s): 5,905
+
+and manually analyzed 30 instances returned by each pattern to select the one better suited to identify commits likely related to the fixing of code-comment inconsistencies. Through this process, the choice was (update* or outdate*) and comment(s).
